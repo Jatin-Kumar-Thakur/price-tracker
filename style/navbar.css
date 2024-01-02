@@ -1,0 +1,38 @@
+.nav-header{
+    width: 100%;
+    display: flex;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+.nav-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.nav-link p{
+    padding-left: 10px;
+}
+.nav-title-span{
+    color: red;
+}
+.nav-images{
+    margin: 0 10px;
+}
+
+@media screen and (max-width:500px) {
+    .nav-link{
+        font-size: 1.2rem;
+    }
+    .nav-images{
+        width: 24;
+        height: 24;
+    }
+}

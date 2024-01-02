@@ -1,0 +1,21 @@
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+.search{
+    width: 80%;
+    height: 1.25rem;
+    padding: 0.25px 0;
+}
+.search-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+.search-form input{
+    padding: 0.5rem;
+    height: 2rem;
+}

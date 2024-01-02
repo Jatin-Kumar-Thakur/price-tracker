@@ -1,0 +1,15 @@
+.hero-carousel{
+    width: 50%;
+    background-color: rgba(219, 215, 211, 0.336);
+    border-radius: 10px ;
+}
+
+
+@media screen and (max-width:1200px){
+    .hero-carousel{
+        margin: 2rem 0;
+        padding: 2rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+}

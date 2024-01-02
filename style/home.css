@@ -1,0 +1,25 @@
+.home-main{
+    padding: 24px 16%;
+    border: 2px solid red;
+}
+.head-text span{
+    color: red;
+}
+.head-text{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+.head-description{
+    margin: 10px 0;
+}
+.first-section{
+    display: flex;
+}
+
+
+@media screen and (max-width:1200px){
+    .first-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
