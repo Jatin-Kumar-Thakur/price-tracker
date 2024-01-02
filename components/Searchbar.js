@@ -18,7 +18,7 @@ const Searchbar = () => {
         hostname.includes('amazon.') ||
         hostname.endsWith('amazon')
       ) {
-        // return true;
+        return true;
         console.log("OK")
       }
     } catch (error) {
@@ -31,18 +31,18 @@ const Searchbar = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const isValidLink = isValidAmazonProductURL(searchPrompt);
+    const isValidLink = isValidAmazonProductURL(searchText);
 
     if (!isValidLink) return alert('Please provide a valid Amazon link')
 
     try {
-      setIsLoading(true);
+      // setIsLoading(true);
       // Scrape the product page
-      const product = await scrapeAndStoreProduct(searchPrompt);
+      const product = await scrapeAndStoreProduct(searchText);
     } catch (error) {
       console.log(error);
     } finally {
-      setIsLoading(false);
+      // setIsLoading(false);
     }
   }
 
